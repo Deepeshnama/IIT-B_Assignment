@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+        *{
+              font-family: "Comfortaa", serif;
+        }
+
+        .animal-image {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 50px;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .bold-italic-blue {
+            font-weight: bold;
+            font-style: italic;
+            color: rgb(30, 30, 140);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h2>Cats</h2>
+        <table class="table table-striped" id="bigCatsTable">
+            <thead>
+                <tr>
+                    <th onclick="bigCatsTable.sortAnimals('name')">Name</th>
+                    <th onclick="bigCatsTable.sortAnimals('size')">Size</th>
+                    <th onclick="bigCatsTable.sortAnimals('location')">Location</th>
+                    <th>Image</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Dogs</h2>
+        <table class="table table-striped" id="dogsTable">
+            <thead>
+                <tr>
+                    <th onclick="dogsTable.sortAnimals('name')">Name</th>
+                    <th>Size</th>
+                    <th onclick="dogsTable.sortAnimals('location')">Location</th>
+                    <th>Image</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Big Fish</h2>
+        <table class="table table-striped" id="bigFishTable">
+            <thead>
+                <tr>
+                    <th class="bold-italic-blue" onclick="bigFishTable.sortAnimals('name')">Name</th>
+                    <th onclick="bigFishTable.sortAnimals('size')">Size</th>
+                    <th>Location</th>
+                    <th>Image</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
